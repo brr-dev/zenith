@@ -1,6 +1,6 @@
 // ! Copyright (c) 2024, Brandon Ramirez, brr.dev
 
-import GameController from '../GameController';
+import { GameController } from '../GameController';
 import Action from '../classes/Action';
 
 import { GameControls } from '../gameControls';

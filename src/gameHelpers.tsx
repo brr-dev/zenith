@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 import { InteractionText } from './gameTypes';
-import GameController from './GameController';
+import { GameController } from './GameController';
 import { Feature, Item, Room } from './classes';
 import { cn } from '@brr-dev/classnames';
 
@@ -15,7 +15,10 @@ export function asFunction<CBType, DataType>(data: DataType) {
 
 export function wrapInputTag(tag: string, tagOnClick?: () => void): ReactNode {
     return (
-        <span className={cn('alt', tagOnClick && 'interactive')} onClick={tagOnClick}>
+        <span
+            className={cn('alt', tagOnClick && 'interactive')}
+            onClick={tagOnClick}
+        >
             &gt;{tag}&lt;
         </span>
     );
@@ -35,7 +38,10 @@ export function replaceTag(
     }, [] as ReactNode[]);
 }
 
-export function newlineStringToNodes(strWithNewlines: string, newlineChar = '\n'): ReactNode[] {
+export function newlineStringToNodes(
+    strWithNewlines: string,
+    newlineChar = '\n',
+): ReactNode[] {
     return strWithNewlines.split(newlineChar).reduce((res, stringPart) => {
         if (res.length > 0) res.push(<br />);
         res.push(stringPart);
@@ -43,9 +49,15 @@ export function newlineStringToNodes(strWithNewlines: string, newlineChar = '\n'
     }, [] as ReactNode[]);
 }
 
-export function hasItem(featureOrRoom: Feature | Room, itemOrName: string | Item): boolean {
+export function hasItem(
+    featureOrRoom: Feature | Room,
+    itemOrName: string | Item,
+): boolean {
     if (typeof itemOrName === 'string') {
-        return featureOrRoom.items.find((value) => value.name === itemOrName) !== undefined;
+        return (
+            featureOrRoom.items.find((value) => value.name === itemOrName) !==
+            undefined
+        );
     } else {
         return featureOrRoom.items.indexOf(itemOrName) >= 0;
     }
@@ -75,7 +87,10 @@ export async function playInteractionText(
         const _txt = interactionText[idx];
 
         if (typeof _txt === 'string') {
-            gameController.console.print(<div>{newlineStringToNodes(_txt)}</div>, <br />);
+            gameController.console.print(
+                <div>{newlineStringToNodes(_txt)}</div>,
+                <br />,
+            );
         } else {
             gameController.console.print(<div>{_txt}</div>, <br />);
         }

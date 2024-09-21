@@ -1,7 +1,7 @@
 // ! Copyright (c) 2024, Brandon Ramirez, brr.dev
 
 import Feature, { FeatureDefinition } from '../classes/Feature';
-import GameController from '../GameController';
+import { GameController } from '../GameController';
 import Book, { BookDefinition } from './Book';
 import { wrapInputTag } from '../gameHelpers';
 import { DefinitionMap } from '../gameTypes';

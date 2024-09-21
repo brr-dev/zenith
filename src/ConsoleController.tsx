@@ -11,7 +11,7 @@ const DEFAULT_INPUT_PREFIX = <>&gt;&gt;&nbsp;</>;
  * A class that lets you link a Console component from the cozy-ui library
  * to React state and exposes Python-esque console I/O controller methods.
  */
-export default class ConsoleController {
+export class ConsoleController {
     private _inputRef: RefObject<HTMLDivElement>;
     private readonly _setInputPrefix: SetInputPrefixCB;
     private readonly _setOutputText: SetOutputTextCB;

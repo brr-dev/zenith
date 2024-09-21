@@ -6,7 +6,7 @@
 import { GameDiscDefinition } from './gameTypes';
 import { Player, Room, RoomID, Zone, ZoneID, ZoneLoader } from './classes';
 import { HelpAction, ViewInventoryAction } from './actions';
-import ConsoleController from './ConsoleController';
+import { ConsoleController } from './ConsoleController';
 
 /**
  * This class should handle everything. It should build maps from JSON and store the
@@ -19,7 +19,7 @@ import ConsoleController from './ConsoleController';
  * best practices, as the current Python version has some glaring issues built into
  * its core as a result of the original article I followed for the architecture.
  */
-export default class GameController {
+export class GameController {
     public console: ConsoleController;
     /** Store a reference to the Player object on this top-level controller. */
     public player: Player;

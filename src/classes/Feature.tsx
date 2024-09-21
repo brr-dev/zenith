@@ -1,6 +1,6 @@
 // ! Copyright (c) 2024, Brandon Ramirez, brr.dev
 
-import GameController from '../GameController';
+import { GameController } from '../GameController';
 import { asFunction, newlineStringToNodes, replaceTag } from '../gameHelpers';
 import Item, { ItemDefinition } from './Item';
 import { DefinitionMap, LockCode, LockType } from '../gameTypes';

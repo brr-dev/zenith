@@ -1,7 +1,7 @@
 // ! Copyright (c) 2024, Brandon Ramirez, brr.dev
 
 import { Feature, FeatureDefinition } from '../classes';
-import GameController from '../GameController';
+import { GameController } from '../GameController';
 import { newlineStringToNodes } from '../gameHelpers';
 import { ReactNode } from 'react';
 import { OptionalKeys } from '@brr-dev/ts-utils';

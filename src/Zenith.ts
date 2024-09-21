@@ -5,6 +5,8 @@
 
 export * from './gameTypes';
 export { GameControls } from './gameControls';
+export * from './GameController';
+export * from './ConsoleController';
 export * from './classes';
 export * from './actions';
 export * from './features';

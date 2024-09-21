@@ -1,7 +1,7 @@
 // ! Copyright (c) 2024, Brandon Ramirez, brr.dev
 
 import Action from '../classes/Action';
-import GameController from '../GameController';
+import { GameController } from '../GameController';
 import { Key } from '../items';
 import { Exit, Feature } from '../classes';
 

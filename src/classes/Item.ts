@@ -2,9 +2,9 @@
 
 import { ReactNode } from 'react';
 import { replaceTag } from '../gameHelpers';
-import GameController from '../GameController';
 import ActionMap from './ActionMap';
 import TakeItemAction from '../actions/TakeItemAction';
+import { GameController } from '../GameController';
 
 export default class Item {
     public name: string;
@@ -39,9 +39,16 @@ export default class Item {
         return `${this.name} => ${this.description}`;
     }
 
-    public registerActions(actionMap: ActionMap, gameController: GameController) {
+    public registerActions(
+        actionMap: ActionMap,
+        gameController: GameController,
+    ) {
         actionMap.register(
-            new TakeItemAction(this, gameController.getCurrentRoom(), gameController),
+            new TakeItemAction(
+                this,
+                gameController.getCurrentRoom(),
+                gameController,
+            ),
         );
     }
 
