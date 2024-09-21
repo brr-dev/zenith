@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
-  "name": "@brr-dev/typescript-package-template",
-  "description": "A template repo for bundling TypeScript packages.",
+  "version": "0.9.4",
+  "name": "@zenith-game/core",
+  "description": "Zenith is a WIP game engine to build highly customizable console-based text adventure game experiences.",
   "author": "Brandon Ramirez <brandon@brr.dev>",
   "license": "MIT",
   "main": "./dist/index.js",
