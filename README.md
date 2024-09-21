@@ -1,3 +1,3 @@
-# @brr-dev/typescript-package-template
+# @brr-dev/zenith-core
 
-A template repo for bundling TypeScript packages.
+Zenith is a WIP game engine to build highly customizable console-based text adventure game experiences.
