@@ -1,5 +1,5 @@
 {
-  "version": "0.9.6",
+  "version": "0.9.7",
   "name": "@zenith-game/core",
   "description": "Zenith is a WIP game engine to build highly customizable console-based text adventure game experiences.",
   "author": "Brandon Ramirez <brandon@brr.dev>",

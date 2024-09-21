@@ -11,3 +11,4 @@ export * from './classes';
 export * from './actions';
 export * from './features';
 export * from './items';
+export * from './gameHelpers';
